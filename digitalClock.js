@@ -7,13 +7,13 @@ function updateClock(){
     let hours = presentTime.getHours()
     let minutes = presentTime.getMinutes()
     let seconds = presentTime.getSeconds()
-    let amOrPm = "Am"
+    let amOrPm = "AM"
     if (hours > 12){
         hours=hours-12
-        amOrPm ="Pm"
+        amOrPm ="PM"
     }
     else{
-        amOrPm = "Am"
+        amOrPm = "AM"
     }
     hours = hours < 10 ? "0" + hours : hours;
     minutes = minutes < 10 ? "0" + minutes : minutes;
